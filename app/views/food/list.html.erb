@@ -1,0 +1,14 @@
+<h2>food</h2>
+<form action="/food/write" method="post">
+    <label for="name">음식이름</label>
+    <input type="text" name="name" id="name" class="form-control" required>
+    <label for="kcal">칼로리</label>
+    <input type="text" name="kcal" id="kcal" class="form-control" required>
+    <button type="submit" class="btn btn-default">등록</button>
+</form>
+<hr>
+<div class="print">
+    <% @all_post.each do |p| %>
+    <p><%= p.name %> | <%= p.kcal %>kcal</p>
+    <% end %>
+</div>

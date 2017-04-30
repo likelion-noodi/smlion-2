@@ -1,0 +1,12 @@
+<h2>bucketlist</h2>
+<form action="/bucketlist/write" method="post">
+    <input type="text" name="wish" class="form-control"required>
+    <button type="submit" class="btn btn-default">등록</button>
+</form>
+<hr>
+<div class="print">
+    <% @all_post.each do |p| %>
+    <p><%= p.wish %></p>
+    <hr>
+    <% end %>
+</div>

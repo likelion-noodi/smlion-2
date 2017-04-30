@@ -1,0 +1,29 @@
+#nav{
+  border:1px solid #ccc;
+  border-width:1px 0;
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+#nav li{
+  display:inline;
+}
+#nav a{
+  display:inline-block;
+  padding:10px;
+}
+
+.box {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.print {
+    margin-top: 100px;
+    text-align: left;
+}
+
+.btn {
+    width: 20%;
+}

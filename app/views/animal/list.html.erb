@@ -1,0 +1,17 @@
+<h2>animal</h2>
+<form action="/animal/write" method="post">
+    <label for="name">동물이름</label>
+    <input type="text" name="name" id="name" class="form-control" required>
+    <label for="feature">특징</label>
+    <input type="text" name="feature" id="feature" class="form-control" required>
+    <button type="submit" class="btn btn-default">등록</button>
+</form>
+<hr>
+<div class="print">
+    <% @all_post.each do |p| %>
+    동물이름 : <%= p.name %><br>
+    특징: <br>
+    <%= p.feature %>
+    <hr>
+    <% end %>   
+</div>

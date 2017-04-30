@@ -1,0 +1,18 @@
+<h2>movie</h2>
+<form action="/movie/write" method="post">
+    <label for="name">영화 제목</label>
+    <input type="text" name="name" id="name" class="form-control" required > <br>
+    1 <input type="range" name="level" min="1" max="5" value="3" width="20%" required> 5<br>
+    <input type="date" name="date"  class="form-control"required>
+    <textarea name="content" class="form-control" rows="7" cols="120" required></textarea><br>
+    <button type="submit" class="btn btn-default">작성</button>
+</form>
+<hr>
+<div class="print">
+    <% @all_post.each do |p| %>
+    영화제목 : <%= p.name %> | <%= p.level %>점<br>
+    <%= p.date %>에 관람<br>
+    <%= p.content %>
+    <hr>
+    <% end %>
+</div>
